@@ -30,7 +30,7 @@ app.get('/productos', (req, res) => {
 });
 
 //Para redirigir al formulario de carga de productos
-app.get('/carga', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/input.html');
 })
 
@@ -46,7 +46,7 @@ app.post('/productos', (req, res) => {
 });
 
 app.listen(8080, () => {
-    console.log("escuchando desafio 10");
+    console.log("escuchando desafio 10 handlebars");
 });
 
 
